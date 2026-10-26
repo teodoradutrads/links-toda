@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TÓDA — Links</title>
+<meta name="description" content="Estruturação de operações comerciais com processo, dados e IA aplicada.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230E2318'/%3E%3Cg stroke='%23C3F53C' stroke-width='5' stroke-linecap='round'%3E%3Cline x1='12' y1='46' x2='30' y2='22'/%3E%3Cline x1='30' y1='22' x2='51' y2='33'/%3E%3C/g%3E%3Cg fill='%23C3F53C'%3E%3Ccircle cx='12' cy='46' r='6'/%3E%3Ccircle cx='30' cy='22' r='6'/%3E%3Ccircle cx='51' cy='33' r='6'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap">
+<style>
+  :root{
+    --forest:#0E2318; --forest-2:#143124; --forest-3:#1b3d2d;
+    --cream:#EEEBDC; --lime:#C3F53C;
+    --line:rgba(238,235,220,.16); --mut:rgba(238,235,220,.72);
+    --sans:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --disp:'Sora',-apple-system,BlinkMacSystemFont,sans-serif;
+    --ease:cubic-bezier(.2,.7,.2,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{min-height:100%;}
+  body{
+    background:var(--forest);
+    background-image:
+      radial-gradient(60rem 30rem at 50% -10%, rgba(195,245,60,.10), transparent 60%),
+      linear-gradient(rgba(238,235,220,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(238,235,220,.04) 1px, transparent 1px);
+    background-size:auto, 56px 56px, 56px 56px;
+    color:var(--cream); font-family:var(--sans);
+    display:flex; justify-content:center;
+    padding:3.5rem 16px 2.5rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{width:100%; max-width:30rem; display:flex; flex-direction:column; align-items:center; text-align:center;}
+
+  .logo{display:flex; align-items:center; gap:.85rem; text-decoration:none; color:var(--cream);}
+  .logo svg{width:58px; height:40px;}
+  .logo span{font-family:var(--disp); font-weight:700; font-size:2.6rem; letter-spacing:-.03em; line-height:1;}
+
+  .tag{margin-top:1.25rem; font-family:var(--disp); font-weight:600; font-size:1.05rem; line-height:1.4; letter-spacing:-.01em;}
+  .tag em{font-style:normal; color:var(--lime);}
+  .sub{margin-top:.5rem; color:var(--mut); font-size:.95rem; line-height:1.55; max-width:24rem;}
+
+  .links{list-style:none; width:100%; margin-top:2.25rem; display:flex; flex-direction:column; gap:.8rem;}
+  .btn{
+    display:flex; align-items:center; gap:.9rem; width:100%;
+    padding:1rem 1.1rem; border-radius:14px;
+    background:var(--forest-2); border:1px solid var(--line);
+    color:var(--cream); text-decoration:none; text-align:left;
+    transition:transform .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+  }
+  .btn:hover{transform:translateY(-2px); border-color:rgba(195,245,60,.55); background:var(--forest-3);}
+  .btn:focus-visible{outline:2px solid var(--lime); outline-offset:3px;}
+  .ico{flex:none; width:42px; height:42px; border-radius:10px; display:grid; place-items:center; background:rgba(195,245,60,.1); color:var(--lime);}
+  .ico svg{width:20px; height:20px;}
+  .txt{flex:1; min-width:0;}
+  .txt b{display:block; font-family:var(--disp); font-weight:600; font-size:1rem; letter-spacing:-.01em;}
+  .txt small{display:block; margin-top:.15rem; color:var(--mut); font-size:.82rem; line-height:1.35;}
+  .arr{flex:none; color:var(--mut); font-size:1.1rem; transition:transform .25s var(--ease), color .25s var(--ease);}
+  .btn:hover .arr{transform:translateX(3px); color:var(--lime);}
+
+  /* destaque Clint */
+  .btn.hl{background:var(--lime); border-color:var(--lime); color:var(--forest);}
+  .btn.hl:hover{background:#cff85f; border-color:#cff85f;}
+  .btn.hl .ico{background:var(--forest); color:var(--lime);}
+  .btn.hl .txt small, .btn.hl .arr{color:rgba(14,35,24,.75);}
+  .btn.hl:hover .arr{color:var(--forest);}
+  /* destaque WhatsApp */
+  .btn.hl{padding:1.2rem 1.1rem; box-shadow:0 10px 30px -12px rgba(195,245,60,.55);}
+  .btn.hl .txt b{font-size:1.08rem;}
+
+  /* destaque secundário Clint */
+  .btn.hl2{border-color:rgba(195,245,60,.6);}
+  .btn.hl2 .txt b{color:var(--lime);}
+
+  .pill{display:inline-block; margin-left:.4rem; padding:.12rem .45rem; border-radius:99px; background:var(--forest); color:var(--lime); font-family:var(--sans); font-size:.68rem; font-weight:700; letter-spacing:.02em; vertical-align:2px;}
+
+  .foot{margin-top:2.75rem; color:var(--mut); font-size:.78rem; line-height:1.6;}
+  .foot b{color:var(--cream); font-weight:600;}
+
+  .rv{opacity:0; transform:translateY(10px); animation:in .6s var(--ease) forwards; animation-delay:var(--d,0s);}
+  @keyframes in{to{opacity:1; transform:none;}}
+  @media (prefers-reduced-motion:reduce){ .rv{opacity:1; transform:none; animation:none;} .btn,.arr{transition:none;} }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <a class="logo rv" href="https://todaeco.com/" target="_blank" rel="noopener" aria-label="TÓDA — site">
+    <svg viewBox="4 14 58 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <line x1="12" y1="46" x2="30" y2="22" stroke="#C3F53C" stroke-width="5" stroke-linecap="round"/>
+      <line x1="30" y1="22" x2="51" y2="33" stroke="#C3F53C" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="12" cy="46" r="6" fill="#C3F53C"/><circle cx="30" cy="22" r="6" fill="#C3F53C"/><circle cx="51" cy="33" r="6" fill="#C3F53C"/>
+    </svg>
+    <span>tóda</span>
+  </a>
+
+  <p class="tag rv" style="--d:.08s">TÓDA venda deixa um dado. <em>E nós conectamos tudo isso.</em></p>
+  <p class="sub rv" style="--d:.14s">Estruturação de operações comerciais com processo, dados e IA aplicada.</p>
+
+  <ul class="links">
+    <li class="rv" style="--d:.2s">
+      <a class="btn hl" href="https://wa.me/554896640747?text=Oi%2C%20vim%20pelo%20Instagram%20da%20t%C3%B3da%20e%20preciso%20de%20ajuda!" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.28l5.68-1.49a11.3 11.3 0 0 0 5.77 1.47c6.26 0 11.35-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02z"/></svg></span>
+        <span class="txt"><b>Fale com a TÓDA no WhatsApp</b><small>Conte o seu cenário e a gente te ajuda</small></span>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li class="rv" style="--d:.24s">
+      <a class="btn" href="https://todaeco.com/" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+        <span class="txt"><b>Conheça a TÓDA</b><small>todaeco.com</small></span>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li class="rv" style="--d:.26s">
+      <a class="btn hl2" href="https://app.useclint.com/signup?ref=V7bkLS4jldB2" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></span>
+        <span class="txt"><b>Teste a Clint por 14 dias <span class="pill">10% OFF</span></b><small>14 dias de teste + cupom de 10% de desconto</small></span>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li class="rv" style="--d:.32s">
+      <a class="btn" href="https://www.youtube.com/channel/UCkvzc0wlOdFgEG4xbIKSc1g" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></span>
+        <span class="txt"><b>YouTube</b><small>Conteúdos sobre operação comercial e IA</small></span>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li class="rv" style="--d:.38s">
+      <a class="btn" href="https://www.linkedin.com/company/toda-e-co" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
+        <span class="txt"><b>LinkedIn</b><small>Acompanhe a TÓDA</small></span>
+        <span class="arr" aria-hidden="true">→</span>
+      </a>
+    </li>
+  </ul>
+
+  <p class="foot rv" style="--d:.46s"><b>TÓDA</b> · Processo, dados e estrutura para vender mais.</p>
+
+</main>
+</body>
+</html>
