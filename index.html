@@ -3,142 +3,75 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TÓDA — Links</title>
-<meta name="description" content="Estruturação de operações comerciais com processo, dados e IA aplicada.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230E2318'/%3E%3Cg stroke='%23C3F53C' stroke-width='5' stroke-linecap='round'%3E%3Cline x1='12' y1='46' x2='30' y2='22'/%3E%3Cline x1='30' y1='22' x2='51' y2='33'/%3E%3C/g%3E%3Cg fill='%23C3F53C'%3E%3Ccircle cx='12' cy='46' r='6'/%3E%3Ccircle cx='30' cy='22' r='6'/%3E%3Ccircle cx='51' cy='33' r='6'/%3E%3C/g%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap">
+<title>TÓDA | Links</title>
+<meta name="description" content="Operação comercial para infoprodutores: processo, CRM, dados e IA aplicada. Fale com o time da TÓDA.">
+<link rel="canonical" href="https://links.todaeco.com/">
+<meta property="og:type" content="website"><meta property="og:title" content="TÓDA | Links"><meta property="og:description" content="Operação comercial para infoprodutores: processo, CRM, dados e IA aplicada. Fale com o time da TÓDA."><meta property="og:url" content="https://links.todaeco.com/">
+<meta name="theme-color" content="#06110B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306110B'/%3E%3Cg stroke='%23C3F53C' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'%3E%3Cpolyline points='12%2C46 30%2C22 51%2C33'/%3E%3C/g%3E%3Cg fill='%23C3F53C'%3E%3Ccircle cx='12' cy='46' r='6'/%3E%3Ccircle cx='30' cy='22' r='6'/%3E%3Ccircle cx='51' cy='33' r='6'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Manrope:wght@400;500;600&family=Sora:wght@700;800&display=swap">
 <style>
-  :root{
-    --forest:#0E2318; --forest-2:#143124; --forest-3:#1b3d2d;
-    --cream:#EEEBDC; --lime:#C3F53C;
-    --line:rgba(238,235,220,.16); --mut:rgba(238,235,220,.72);
-    --sans:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-    --disp:'Sora',-apple-system,BlinkMacSystemFont,sans-serif;
-    --ease:cubic-bezier(.2,.7,.2,1);
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{min-height:100%;}
-  body{
-    background:var(--forest);
-    background-image:
-      radial-gradient(60rem 30rem at 50% -10%, rgba(195,245,60,.10), transparent 60%),
-      linear-gradient(rgba(238,235,220,.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(238,235,220,.04) 1px, transparent 1px);
-    background-size:auto, 56px 56px, 56px 56px;
-    color:var(--cream); font-family:var(--sans);
-    display:flex; justify-content:center;
-    padding:3.5rem 16px 2.5rem;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{width:100%; max-width:30rem; display:flex; flex-direction:column; align-items:center; text-align:center;}
-
-  .logo{display:flex; align-items:center; gap:.85rem; text-decoration:none; color:var(--cream);}
-  .logo svg{width:58px; height:40px;}
-  .logo span{font-family:var(--disp); font-weight:700; font-size:2.6rem; letter-spacing:-.03em; line-height:1;}
-
-  .tag{margin-top:1.25rem; font-family:var(--disp); font-weight:600; font-size:1.05rem; line-height:1.4; letter-spacing:-.01em;}
-  .tag em{font-style:normal; color:var(--lime);}
-  .sub{margin-top:.5rem; color:var(--mut); font-size:.95rem; line-height:1.55; max-width:24rem;}
-
-  .links{list-style:none; width:100%; margin-top:2.25rem; display:flex; flex-direction:column; gap:.8rem;}
-  .btn{
-    display:flex; align-items:center; gap:.9rem; width:100%;
-    padding:1rem 1.1rem; border-radius:14px;
-    background:var(--forest-2); border:1px solid var(--line);
-    color:var(--cream); text-decoration:none; text-align:left;
-    transition:transform .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
-  }
-  .btn:hover{transform:translateY(-2px); border-color:rgba(195,245,60,.55); background:var(--forest-3);}
-  .btn:focus-visible{outline:2px solid var(--lime); outline-offset:3px;}
-  .ico{flex:none; width:42px; height:42px; border-radius:10px; display:grid; place-items:center; background:rgba(195,245,60,.1); color:var(--lime);}
-  .ico svg{width:20px; height:20px;}
-  .txt{flex:1; min-width:0;}
-  .txt b{display:block; font-family:var(--disp); font-weight:600; font-size:1rem; letter-spacing:-.01em;}
-  .txt small{display:block; margin-top:.15rem; color:var(--mut); font-size:.82rem; line-height:1.35;}
-  .arr{flex:none; color:var(--mut); font-size:1.1rem; transition:transform .25s var(--ease), color .25s var(--ease);}
-  .btn:hover .arr{transform:translateX(3px); color:var(--lime);}
-
-  /* destaque Clint */
-  .btn.hl{background:var(--lime); border-color:var(--lime); color:var(--forest);}
-  .btn.hl:hover{background:#cff85f; border-color:#cff85f;}
-  .btn.hl .ico{background:var(--forest); color:var(--lime);}
-  .btn.hl .txt small, .btn.hl .arr{color:rgba(14,35,24,.75);}
-  .btn.hl:hover .arr{color:var(--forest);}
-  /* destaque WhatsApp */
-  .btn.hl{padding:1.2rem 1.1rem; box-shadow:0 10px 30px -12px rgba(195,245,60,.55);}
-  .btn.hl .txt b{font-size:1.08rem;}
-
-  /* destaque secundário Clint */
-  .btn.hl2{border-color:rgba(195,245,60,.6);}
-  .btn.hl2 .txt b{color:var(--lime);}
-
-  .pill{display:inline-block; margin-left:.4rem; padding:.12rem .45rem; border-radius:99px; background:var(--forest); color:var(--lime); font-family:var(--sans); font-size:.68rem; font-weight:700; letter-spacing:.02em; vertical-align:2px;}
-
-  .foot{margin-top:2.75rem; color:var(--mut); font-size:.78rem; line-height:1.6;}
-  .foot b{color:var(--cream); font-weight:600;}
-
-  .rv{opacity:0; transform:translateY(10px); animation:in .6s var(--ease) forwards; animation-delay:var(--d,0s);}
-  @keyframes in{to{opacity:1; transform:none;}}
-  @media (prefers-reduced-motion:reduce){ .rv{opacity:1; transform:none; animation:none;} .btn,.arr{transition:none;} }
+:root{--ink:#06110B;--forest:#0E2318;--forest2:#143124;--paper:#F1EEE2;--lime:#C3F53C;--line:rgba(241,238,226,.14);--mut:rgba(241,238,226,.66);
+--sans:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--disp:'Sora',-apple-system,BlinkMacSystemFont,sans-serif;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%}
+body{background:var(--ink);color:var(--paper);font-family:var(--sans);-webkit-font-smoothing:antialiased;display:flex;justify-content:center;padding:3rem 16px 2.5rem;position:relative;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(48rem 26rem at 50% -8%,rgba(195,245,60,.13),transparent 62%);pointer-events:none}
+.route{position:fixed;left:0;right:0;bottom:0;width:100%;height:30vh;pointer-events:none;opacity:.32;z-index:0}
+.route path{fill:none;stroke:var(--lime);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.6s var(--ease) .3s forwards}
+.route circle{fill:var(--lime);opacity:0;animation:pop .5s var(--ease) forwards}
+.route circle:nth-of-type(1){animation-delay:1.2s}.route circle:nth-of-type(2){animation-delay:1.9s}.route circle:nth-of-type(3){animation-delay:2.6s}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes pop{to{opacity:1}}
+.wrap{position:relative;z-index:1;min-width:0;width:100%;max-width:30rem;display:flex;flex-direction:column;align-items:center;text-align:center}
+.logo-svg{width:min(15rem,62vw);height:auto;display:block}
+.eyebrow{margin-top:1.6rem;font-family:var(--mono);font-weight:700;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lime);max-width:100%}
+h1{margin-top:.7rem;font-family:var(--disp);font-weight:800;font-size:clamp(1.8rem,8vw,2.7rem);line-height:1.02;letter-spacing:-.045em}
+h1 b{color:var(--lime);font-weight:800}
+.sub{margin-top:.9rem;max-width:25rem;font-size:.98rem;line-height:1.5;color:var(--mut)}
+ul{list-style:none;width:100%;margin-top:2rem;display:flex;flex-direction:column;gap:.7rem}
+.card{display:flex;align-items:center;gap:.95rem;width:100%;padding:.95rem 1rem;border:1px solid var(--line);border-radius:16px;background:rgba(14,35,24,.72);backdrop-filter:blur(6px);color:var(--paper);text-decoration:none;text-align:left;transition:transform .25s var(--ease),border-color .25s,background .25s}
+.card:hover,.card:focus-visible{transform:translateY(-2px);border-color:rgba(195,245,60,.55);background:rgba(20,49,36,.9);outline:none}
+.card .ic{flex:none;width:2.6rem;height:2.6rem;border-radius:12px;display:grid;place-items:center;background:var(--forest2);color:var(--lime)}
+.card .ic svg{width:1.35rem;height:1.35rem}
+.card .tx{flex:1;min-width:0}
+.card .t{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;font-family:var(--disp);font-weight:700;font-size:1rem;letter-spacing:-.015em}
+.card .d{margin-top:.15rem;font-size:.82rem;color:var(--mut)}
+.card .ar{flex:none;color:var(--lime);font-size:1.1rem;transition:transform .25s var(--ease)}
+.card:hover .ar{transform:translateX(3px)}
+.card.primary{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.card.primary .ic{background:var(--ink);color:var(--lime)}
+.card.primary .d{color:rgba(6,17,11,.72)}
+.card.primary .ar{color:var(--ink)}
+.card.primary:hover{background:#d3ff55;border-color:#d3ff55}
+.badge{font-family:var(--mono);font-weight:700;font-size:.62rem;letter-spacing:.08em;padding:.18rem .45rem;border-radius:99px;background:var(--lime);color:var(--ink)}
+footer{margin-top:2.2rem;font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(241,238,226,.45)}
+@media (prefers-reduced-motion:reduce){.route path{animation:none;stroke-dashoffset:0}.route circle{animation:none;opacity:1}.card,.card .ar{transition:none}}
 </style>
 </head>
 <body>
+<svg class="route" viewBox="0 0 800 300" preserveAspectRatio="xMaxYMax slice" aria-hidden="true"><path d="M-20 280 C 200 270, 380 230, 520 150 S 720 40, 830 -10"/><circle cx="260" cy="262" r="6"/><circle cx="520" cy="150" r="6"/><circle cx="700" cy="62" r="6"/></svg>
 <main class="wrap">
-
-  <a class="logo rv" href="https://todaeco.com/" target="_blank" rel="noopener" aria-label="TÓDA — site">
-    <svg viewBox="4 14 58 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <line x1="12" y1="46" x2="30" y2="22" stroke="#C3F53C" stroke-width="5" stroke-linecap="round"/>
-      <line x1="30" y1="22" x2="51" y2="33" stroke="#C3F53C" stroke-width="5" stroke-linecap="round"/>
-      <circle cx="12" cy="46" r="6" fill="#C3F53C"/><circle cx="30" cy="22" r="6" fill="#C3F53C"/><circle cx="51" cy="33" r="6" fill="#C3F53C"/>
-    </svg>
-    <span>tóda</span>
-  </a>
-
-  <p class="tag rv" style="--d:.08s">TÓDA venda deixa um dado. <em>E nós conectamos tudo isso.</em></p>
-  <p class="sub rv" style="--d:.14s">Estruturação de operações comerciais com processo, dados e IA aplicada.</p>
-
-  <ul class="links">
-    <li class="rv" style="--d:.2s">
-      <a class="btn hl" href="https://wa.me/554896640747?text=Oi%2C%20vim%20pelo%20Instagram%20da%20t%C3%B3da%20e%20preciso%20de%20ajuda!" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.28l5.68-1.49a11.3 11.3 0 0 0 5.77 1.47c6.26 0 11.35-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02z"/></svg></span>
-        <span class="txt"><b>Fale com a TÓDA no WhatsApp</b><small>Conte o seu cenário e a gente te ajuda</small></span>
-        <span class="arr" aria-hidden="true">→</span>
-      </a>
-    </li>
-    <li class="rv" style="--d:.24s">
-      <a class="btn" href="https://todaeco.com/" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
-        <span class="txt"><b>Conheça a TÓDA</b><small>todaeco.com</small></span>
-        <span class="arr" aria-hidden="true">→</span>
-      </a>
-    </li>
-    <li class="rv" style="--d:.26s">
-      <a class="btn hl2" href="https://app.useclint.com/signup?ref=V7bkLS4jldB2" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></span>
-        <span class="txt"><b>Teste a Clint por 14 dias <span class="pill">10% OFF</span></b><small>14 dias de teste + cupom de 10% de desconto</small></span>
-        <span class="arr" aria-hidden="true">→</span>
-      </a>
-    </li>
-    <li class="rv" style="--d:.32s">
-      <a class="btn" href="https://www.youtube.com/channel/UCkvzc0wlOdFgEG4xbIKSc1g" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></span>
-        <span class="txt"><b>YouTube</b><small>Conteúdos sobre operação comercial e IA</small></span>
-        <span class="arr" aria-hidden="true">→</span>
-      </a>
-    </li>
-    <li class="rv" style="--d:.38s">
-      <a class="btn" href="https://www.linkedin.com/company/toda-e-co" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
-        <span class="txt"><b>LinkedIn</b><small>Acompanhe a TÓDA</small></span>
-        <span class="arr" aria-hidden="true">→</span>
-      </a>
-    </li>
-  </ul>
-
-  <p class="foot rv" style="--d:.46s"><b>TÓDA</b> · Processo, dados e estrutura para vender mais.</p>
-
+<a href="https://todaeco.com/" aria-label="TÓDA"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 403.02 134.40" class="logo-svg" role="img" aria-label="tóda"><title>tóda</title>
+<g fill="none" stroke="#C3F53C" stroke-width="9.608" stroke-linecap="round" stroke-linejoin="round"><polyline points="36.73,101.96 71.32,55.84 111.67,76.98"/></g>
+<g fill="#C3F53C"><circle cx="36.73" cy="101.96" r="11.529"/><circle cx="71.32" cy="55.84" r="11.529"/><circle cx="111.67" cy="76.98" r="11.529"/></g>
+<g transform="translate(151.945 107.250)">
+<g fill="#F1EEE2"><path d="M32.175000000000004 0.75Q23.925 0.75 18.825000000000003 -1.3250000000000002Q13.725000000000001 -3.4000000000000004 11.337500000000002 -8.2625Q8.950000000000001 -13.125 8.950000000000001 -21.425L9.025 -69.60000000000001H23.925L23.85 -20.75Q23.85 -16.900000000000002 25.900000000000002 -14.850000000000001Q27.950000000000003 -12.8 31.8 -12.8H39.85V0.75ZM0.65 -43.050000000000004V-54.75H39.85V-43.050000000000004Z"/><path d="M74.42500000000001 1.9500000000000002Q67.2 1.9500000000000002 61.60000000000001 -0.30000000000000004Q56.00000000000001 -2.5500000000000003 52.12500000000001 -6.4625Q48.25000000000001 -10.375 46.25000000000001 -15.425Q44.25000000000001 -20.475 44.25000000000001 -26.1V-28.35Q44.25000000000001 -34.125 46.337500000000006 -39.2625Q48.425000000000004 -44.400000000000006 52.35000000000001 -48.3125Q56.275000000000006 -52.225 61.87500000000001 -54.462500000000006Q67.47500000000001 -56.7 74.42500000000001 -56.7Q81.45000000000002 -56.7 87.01250000000002 -54.462500000000006Q92.57500000000002 -52.225 96.50000000000001 -48.3125Q100.42500000000001 -44.400000000000006 102.51250000000002 -39.2625Q104.60000000000001 -34.125 104.60000000000001 -28.35V-26.1Q104.60000000000001 -20.475 102.60000000000001 -15.425Q100.60000000000001 -10.375 96.72500000000001 -6.4625Q92.85000000000001 -2.5500000000000003 87.25 -0.30000000000000004Q81.65 1.9500000000000002 74.42500000000001 1.9500000000000002ZM74.42500000000001 -11.600000000000001Q79.07500000000002 -11.600000000000001 82.20000000000002 -13.6125Q85.32500000000002 -15.625 86.93750000000001 -19.1875Q88.55000000000001 -22.75 88.55000000000001 -27.225Q88.55000000000001 -31.875 86.88750000000002 -35.4375Q85.22500000000001 -39.0 82.0625 -41.075Q78.9 -43.150000000000006 74.42500000000001 -43.150000000000006Q69.97500000000001 -43.150000000000006 66.80000000000001 -41.075Q63.62500000000001 -39.0 61.962500000000006 -35.4375Q60.30000000000001 -31.875 60.30000000000001 -27.225Q60.30000000000001 -22.75 61.91250000000001 -19.1875Q63.525000000000006 -15.625 66.6875 -13.6125Q69.85000000000001 -11.600000000000001 74.42500000000001 -11.600000000000001Z"/><path d="M135.35000000000002 1.8Q129.57500000000002 1.8 124.81250000000001 -0.30000000000000016Q120.05000000000001 -2.4000000000000004 116.57500000000002 -6.1625000000000005Q113.10000000000001 -9.925 111.22500000000001 -15.000000000000002Q109.35000000000001 -20.075000000000003 109.35000000000001 -26.025000000000002V-28.275000000000002Q109.35000000000001 -34.2 111.13750000000002 -39.3125Q112.92500000000001 -44.425000000000004 116.26250000000002 -48.2625Q119.60000000000002 -52.1 124.31250000000001 -54.25Q129.025 -56.400000000000006 134.82500000000002 -56.400000000000006Q141.375 -56.400000000000006 146.1875 -53.550000000000004Q151.0 -50.7 153.7125 -45.150000000000006Q156.425 -39.6 156.675 -31.450000000000003L152.52500000000003 -35.375V-73.0H168.57500000000002V0.0H155.875V-22.725H158.07500000000002Q157.82500000000002 -14.9 154.875 -9.4Q151.925 -3.9000000000000004 146.925 -1.0500000000000003Q141.925 1.8 135.35000000000002 1.8ZM139.35000000000002 -11.55Q143.05 -11.55 146.1125 -13.225000000000001Q149.175 -14.9 151.05 -18.1125Q152.925 -21.325000000000003 152.925 -25.8V-29.5Q152.925 -33.875 151.0 -36.8625Q149.07500000000002 -39.85 146.0 -41.45Q142.925 -43.050000000000004 139.32500000000002 -43.050000000000004Q135.3 -43.050000000000004 132.15 -41.03750000000001Q129.0 -39.025000000000006 127.20000000000002 -35.462500000000006Q125.40000000000002 -31.900000000000002 125.40000000000002 -27.150000000000002Q125.40000000000002 -22.400000000000002 127.2125 -18.900000000000002Q129.025 -15.4 132.1875 -13.475000000000001Q135.35000000000002 -11.55 139.35000000000002 -11.55Z"/><path d="M213.175 0.0V-16.150000000000002H210.525V-33.75Q210.525 -37.975 208.5 -40.0625Q206.47500000000002 -42.150000000000006 202.10000000000002 -42.150000000000006Q199.9 -42.150000000000006 196.3 -42.050000000000004Q192.70000000000002 -41.95 188.875 -41.775000000000006Q185.05 -41.6 181.95000000000002 -41.400000000000006V-54.900000000000006Q184.3 -55.1 187.38750000000002 -55.2875Q190.47500000000002 -55.475 193.78750000000002 -55.5625Q197.10000000000002 -55.650000000000006 199.95000000000002 -55.650000000000006Q208.375 -55.650000000000006 214.1375 -53.28750000000001Q219.9 -50.925000000000004 222.8875 -46.075Q225.875 -41.225 225.875 -33.575V0.0ZM195.675 1.4000000000000001Q189.82500000000002 1.4000000000000001 185.3625 -0.6875000000000001Q180.9 -2.7750000000000004 178.4 -6.7125Q175.9 -10.65 175.9 -16.150000000000002Q175.9 -22.225 179.0125 -26.0625Q182.125 -29.900000000000002 187.7 -31.737500000000004Q193.275 -33.575 200.625 -33.575H212.275V-24.725H200.525Q196.3 -24.725 194.025 -22.637500000000003Q191.75 -20.55 191.75 -17.125Q191.75 -13.775 194.025 -11.7125Q196.3 -9.65 200.525 -9.65Q203.175 -9.65 205.3375 -10.600000000000001Q207.5 -11.55 208.91250000000002 -13.8625Q210.32500000000002 -16.175 210.525 -20.25L214.32500000000002 -16.3Q213.82500000000002 -10.600000000000001 211.57500000000002 -6.675000000000001Q209.32500000000002 -2.75 205.375 -0.6749999999999999Q201.425 1.4000000000000001 195.675 1.4000000000000001Z"/></g>
+<g fill="#C3F53C"><path d="M66.525 -61.2 75.47500000000001 -82.05000000000001H91.95L80.47500000000001 -61.2Z"/></g>
+</g>
+</svg></a>
+<p class="eyebrow">Operação comercial · CRM · IA aplicada</p>
+<h1>Estrutura antes de <b>escala.</b></h1>
+<p class="sub">Processo, CRM, dados e IA aplicada para infoprodutores que querem vender com previsibilidade.</p>
+<ul>
+<li><a class="card primary" href="https://wa.me/554896640747?text=Oi%2C%20vim%20pelo%20Instagram%20da%20t%C3%B3da%20e%20preciso%20de%20ajuda%21"  target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.5c.2 2.6 3.2 5.6 5.8 5.8l1.4-1.3-2-1.2-1 .7c-.9-.4-1.9-1.4-2.3-2.3l.7-1-1.2-2z"/></svg></span><span class="tx"><span class="t">Fale com o nosso time</span><span class="d" style="display:block">Conte o seu cenário no WhatsApp e a gente ajuda</span></span><span class="ar" aria-hidden="true">→</span></a></li>
+<li><a class="card" href="https://todaeco.com/"  target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 3.6 5.3 3.6 8.5s-1 6.1-3.6 8.5c-2.6-2.4-3.6-5.3-3.6-8.5s1-6.1 3.6-8.5z"/></svg></span><span class="tx"><span class="t">Conheça a TÓDA</span><span class="d" style="display:block">todaeco.com</span></span><span class="ar" aria-hidden="true">→</span></a></li>
+<li><a class="card" href="https://app.useclint.com/signup?ref=V7bkLS4jldB2"  target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8.5" width="17" height="4"/><path d="M5 12.5V20h14v-7.5M12 8.5V20M12 8.5C10 8.5 8 8 8 6.2 8 4.8 9.4 4 10.6 4.6 11.6 5.1 12 8.5 12 8.5zM12 8.5c2 0 4-.5 4-2.3 0-1.4-1.4-2.2-2.6-1.6-1 .5-1.4 3.9-1.4 3.9z"/></svg></span><span class="tx"><span class="t">Teste a Clint por 14 dias<span class="badge">10% OFF</span></span><span class="d" style="display:block">14 dias de teste + cupom de 10% de desconto</span></span><span class="ar" aria-hidden="true">→</span></a></li>
+<li><a class="card" href="https://www.youtube.com/channel/UCkvzc0wlOdFgEG4xbIKSc1g"  target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="4"/><path d="M10.5 9.5v5l4.2-2.5z" fill="currentColor"/></svg></span><span class="tx"><span class="t">Canal no YouTube</span><span class="d" style="display:block">Tutoriais e cases de operação comercial</span></span><span class="ar" aria-hidden="true">→</span></a></li>
+<li><a class="card" href="https://www.instagram.com/somostoda_/"  target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg></span><span class="tx"><span class="t">Instagram</span><span class="d" style="display:block">@somostoda_</span></span><span class="ar" aria-hidden="true">→</span></a></li>
+<li><a class="card" href="https://www.linkedin.com/company/toda-e-co"  target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5v6M8 7.6v.1M11.5 16.5v-6M11.5 13c0-1.6 1-2.5 2.3-2.5s2.2.9 2.2 2.5v3.5"/></svg></span><span class="tx"><span class="t">LinkedIn</span><span class="d" style="display:block">Acompanhe a TÓDA</span></span><span class="ar" aria-hidden="true">→</span></a></li>
+</ul>
+<footer>TÓDA · Estrutura antes de escala</footer>
 </main>
 </body>
 </html>
