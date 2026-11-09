@@ -47,6 +47,23 @@ ul{list-style:none;width:100%;margin-top:2rem;display:flex;flex-direction:column
 .badge{font-family:var(--mono);font-weight:700;font-size:.62rem;letter-spacing:.08em;padding:.18rem .45rem;border-radius:99px;background:var(--lime);color:var(--ink)}
 footer{margin-top:2.2rem;font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(241,238,226,.45)}
 @media (prefers-reduced-motion:reduce){.route path{animation:none;stroke-dashoffset:0}.route circle{animation:none;opacity:1}.card,.card .ar{transition:none}}
+
+.card.btn{cursor:pointer;font:inherit;border:1px solid var(--lime)}
+.card.btn[aria-expanded="true"] .ar{transform:rotate(90deg)}
+.panel{display:none;margin-top:.7rem;padding:1rem;border:1px solid rgba(195,245,60,.35);border-radius:16px;background:rgba(14,35,24,.9);text-align:left}
+.panel.open{display:block}
+.panel label{display:block;margin-top:.8rem;font-family:var(--mono);font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.panel label:first-of-type{margin-top:0}
+.panel input,.panel textarea{width:100%;margin-top:.35rem;padding:.75rem .85rem;border-radius:12px;border:1px solid var(--line);background:rgba(6,17,11,.7);color:var(--paper);font:500 .95rem var(--sans)}
+.panel textarea{min-height:5.5rem;resize:vertical}
+.panel input:focus,.panel textarea:focus{outline:2px solid var(--lime);outline-offset:1px}
+.panel .hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.panel button{width:100%;margin-top:1rem;padding:.85rem 1rem;border:0;border-radius:12px;background:var(--lime);color:var(--ink);font:700 .98rem var(--disp);cursor:pointer}
+.panel button:disabled{opacity:.6;cursor:default}
+.panel .msg{margin-top:.8rem;font-size:.9rem;line-height:1.45}
+.panel .msg.ok{color:var(--lime)}.panel .msg.err{color:#ffb4a8}
+.panel .alt{margin-top:.9rem;font-size:.82rem;color:var(--mut)}
+.panel .alt a{color:var(--paper)}
 </style>
 </head>
 <body>
@@ -64,7 +81,18 @@ footer{margin-top:2.2rem;font-family:var(--mono);font-size:.68rem;letter-spacing
 <h1>Structure before <b>scale.</b></h1>
 <p class="sub">Process, CRM, data and applied AI for digital product creators who want predictable sales.</p>
 <ul>
-<li><a class="card primary" href="mailto:teodora@todaeco.com?subject=Sales%20operation%20inquiry%20%28from%20the%20links%20page%29&body=Hi%21%20I%20found%20T%C3%93DA%20and%20I%20need%20help%20with%20my%20sales%20operation.%0A%0AMy%20business%3A%0AMy%20main%20challenge%3A%0A" ><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="3"/><path d="M4.5 8l7.5 5.5L19.5 8"/></svg></span><span class="tx"><span class="t">Email our team</span><span class="d" style="display:block">Tell us your scenario and we will reply by email</span></span><span class="ar" aria-hidden="true">→</span></a></li>
+<li><button type="button" class="card primary btn" id="open-form" aria-expanded="false" aria-controls="contact-panel"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="3"/><path d="M4.5 8l7.5 5.5L19.5 8"/></svg></span><span class="tx"><span class="t">Contact our team</span><span class="d" style="display:block">Tell us your scenario and we will reply by email</span></span><span class="ar" aria-hidden="true">→</span></button>
+<div class="panel" id="contact-panel" role="region" aria-label="Contact form">
+<form id="contact-form" novalidate>
+<label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120">
+<label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160">
+<label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization" maxlength="160">
+<label for="f-message">How can we help?</label><textarea id="f-message" name="message" maxlength="1500" placeholder="Tell us about your sales operation and your main challenge."></textarea>
+<input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button type="submit" id="f-send">Send message</button>
+<p class="msg" id="f-msg" role="status" aria-live="polite"></p>
+<p class="alt">Prefer email? <a href="mailto:teodora@todaeco.com?subject=Sales%20operation%20inquiry%20%28from%20the%20links%20page%29&body=Hi%21%20I%20found%20T%C3%93DA%20and%20I%20need%20help%20with%20my%20sales%20operation.%0A%0AMy%20business%3A%0AMy%20main%20challenge%3A%0A">teodora@todaeco.com</a></p>
+</form></div></li>
 <li><a class="card" href="https://todaeco.com/en/"  target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 3.6 5.3 3.6 8.5s-1 6.1-3.6 8.5c-2.6-2.4-3.6-5.3-3.6-8.5s1-6.1 3.6-8.5z"/></svg></span><span class="tx"><span class="t">Meet TÓDA</span><span class="d" style="display:block">todaeco.com/en</span></span><span class="ar" aria-hidden="true">→</span></a></li>
 <li><a class="card" href="https://www.youtube.com/@toda-en"  target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="4"/><path d="M10.5 9.5v5l4.2-2.5z" fill="currentColor"/></svg></span><span class="tx"><span class="t">YouTube channel</span><span class="d" style="display:block">Tutorials and sales operations cases, in English</span></span><span class="ar" aria-hidden="true">→</span></a></li>
 <li><a class="card" href="https://www.instagram.com/wearetoda_/"  target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg></span><span class="tx"><span class="t">Instagram</span><span class="d" style="display:block">@wearetoda_</span></span><span class="ar" aria-hidden="true">→</span></a></li>
@@ -72,5 +100,26 @@ footer{margin-top:2.2rem;font-family:var(--mono);font-size:.68rem;letter-spacing
 </ul>
 <footer>We Are TÓDA · Structure before scale</footer>
 </main>
+<script>
+(function(){
+var btn=document.getElementById('open-form'),panel=document.getElementById('contact-panel'),form=document.getElementById('contact-form'),msg=document.getElementById('f-msg'),send=document.getElementById('f-send');
+var HOOK='https://functions-api.clint.digital/endpoints/integration/webhook/cfc16160-10e4-47fc-b04e-641e525555d2';
+btn.addEventListener('click',function(){var o=panel.classList.toggle('open');btn.setAttribute('aria-expanded',o);if(o){document.getElementById('f-name').focus({preventScroll:false});}});
+form.addEventListener('submit',function(e){
+ e.preventDefault();msg.className='msg';msg.textContent='';
+ var d=new FormData(form);
+ if(d.get('website')){return;}
+ var name=(d.get('name')||'').trim(),email=(d.get('email')||'').trim();
+ if(!name||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){msg.className='msg err';msg.textContent='Please add your name and a valid email.';return;}
+ send.disabled=true;send.textContent='Sending...';
+ var body=JSON.stringify({name:name,email:email,company:(d.get('company')||'').trim(),message:(d.get('message')||'').trim()});
+ fetch(HOOK,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:body}).then(function(){
+  form.reset();send.textContent='Message sent';msg.className='msg ok';msg.textContent='Thank you! We received your message and will reply by email soon.';
+ }).catch(function(){
+  send.disabled=false;send.textContent='Send message';msg.className='msg err';msg.textContent='Something went wrong. Please email us at teodora@todaeco.com.';
+ });
+});
+})();
+</script>
 </body>
 </html>
