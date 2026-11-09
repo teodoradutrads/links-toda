@@ -86,6 +86,7 @@ footer{margin-top:2.2rem;font-family:var(--mono);font-size:.68rem;letter-spacing
 <form id="contact-form" novalidate>
 <label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120">
 <label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160">
+<label for="f-phone">Phone or WhatsApp</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="40" placeholder="+1 555 123 4567">
 <label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization" maxlength="160">
 <label for="f-message">How can we help?</label><textarea id="f-message" name="message" maxlength="1500" placeholder="Tell us about your sales operation and your main challenge."></textarea>
 <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -109,10 +110,11 @@ form.addEventListener('submit',function(e){
  e.preventDefault();msg.className='msg';msg.textContent='';
  var d=new FormData(form);
  if(d.get('website')){return;}
- var name=(d.get('name')||'').trim(),email=(d.get('email')||'').trim();
+ var name=(d.get('name')||'').trim(),email=(d.get('email')||'').trim(),phone=(d.get('phone')||'').trim();
  if(!name||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){msg.className='msg err';msg.textContent='Please add your name and a valid email.';return;}
+ if(phone.replace(/\D/g,'').length<8){msg.className='msg err';msg.textContent='Please add a phone or WhatsApp number with country code.';return;}
  send.disabled=true;send.textContent='Sending...';
- var body=JSON.stringify({name:name,email:email,company:(d.get('company')||'').trim(),message:(d.get('message')||'').trim()});
+ var body=JSON.stringify({name:name,email:email,phone:phone,company:(d.get('company')||'').trim(),message:(d.get('message')||'').trim()});
  fetch(HOOK,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:body}).then(function(){
   form.reset();send.textContent='Message sent';msg.className='msg ok';msg.textContent='Thank you! We received your message and will reply by email soon.';
  }).catch(function(){
